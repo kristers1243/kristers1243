@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Nedēļa</title>
+    <!-- Pievieno stilu failu -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Galvenais virsraksts</h1>
+</header>
+
+<nav>
+    <a href="#">Saite 1</a>
+    <a href="#">Saite 2</a>
+    <a href="#">Saite 3</a>
+    <a href="#">Saite 4</a>
+</nav>
+
+<div id="main-container">
+    <div id="side-content">
+        <h2>Apakšvirsraksts</h2>
+        <p>Šis ir teksts paragrāfā.</p>
+    </div>
+    <div id="photo-container">
+        <img src="path_to_image1.jpg" alt="Attēls 1">
+        <img src="path_to_image2.jpg" alt="Attēls 2">
+        <img src="path_to_image3.jpg" alt="Attēls 3">
+        <img src="path_to_image4.jpg" alt="Attēls 4">
+    </div>
+</div>
+
+</body>
+</html>
+2. style.css faila saturs:
+css
+Kopēt kodu
+/* Pamatstils ķermenim */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header stils */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation stils */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main-container stilizēšana */
+#main-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Side-content stils */
+#side-content {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo-container stils */
+#photo-container {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stils apakšvirsrakstiem un paragrāfiem */
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Main-container stilizēšana */
+#main-container {
+    display: flex;
+}
+
+/* Side-content stilizēšana */
+#side-content {
+    width: 30%;
+}
+
+/* Photo-container stilizēšana */
+#photo-container {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
